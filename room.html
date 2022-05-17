@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket.Q - Perguntas e resposta</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/room.css" />
+  </head>
+  <body>
+    <div id="room" class="content">
+      <header>
+        <a href="home.html">
+            <img src="assets/logo.svg" alt="Rocket.Q Logo" />
+        </a>
+
+        <div class="buttons">
+            <div class="button outlined">
+                #323243
+                <img src="/assets/copy.svg" alt="Copiar">
+            </div>  
+            <a href="#" class="button">
+                <img src="/assets/users_white.svg" alt="Criar sala">
+                Criar Sala
+            </a>  
+
+        </div>    
+      </header>
+
+      <main>
+          <section id="question-form">
+              <h2>Faca sua pergunta</h2>
+              <form action="">
+                  <label class="src-only" for="question">O que voce quer perguntar?</label>
+                  <textarea name="question" id="question" cols="30" rows="10" placeholder="O que voce quer perguntar?"></textarea>
+
+                  <footer>
+                      <div>
+                          <img src="/assets/lock.svg" alt="Cadeado">
+                          Essa pergunta e anonima
+                      </div>
+                      <button>Enviar</button>
+                  </footer>
+              </form>
+          </section>
+
+          <section id="questions">
+              <h2 class="src-only">Perguntar de comunidade</h2>
+
+              <div class="questions">
+                  <div class="question-wrapper">
+                      <div class="question-content">
+                          <div class="user">
+                              <img src="/assets/avatar.svg" alt="Avatar">
+                        </div>
+                        <div class="question">
+                            <p>Qual a diferenca entre var, let e const no javascript?</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="/assets/check-mark.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="/assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+
+          </section>
+    </main>
+
+
+      
+    </div>
+  </body>
+</html>
