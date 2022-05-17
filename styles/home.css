@@ -35,7 +35,7 @@ main .container{
 
 main h2{
     font-family: 'Poppins', sans-serif;
-    color: var(--block);
+    color: var(--black);
     font-size: clamp(20px, 5vw, 2.8rem);
     margin-bottom: 2.4rem;
 }

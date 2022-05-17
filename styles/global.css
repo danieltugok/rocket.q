@@ -21,6 +21,7 @@ html {
     --grey-dark: #4d5e77;
     --grey-blue: #a1b2cd;
     --grey-light: #e5eaf1;
+    --grey-medium: #eaecf2;
 
     /* 1rem = 16px (User Agent) = 100% */
     font-size: 62.5%;
@@ -101,6 +102,19 @@ button.outlined,
 
 .content header img{
     width: 16.7rem;
+}
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey-dark);
+
 }
 
 
