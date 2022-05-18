@@ -1,0 +1,27 @@
+{
+  "name": "rocketq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieltugok/rocket.q.git"
+  },
+  "keywords": [],
+  "author": "Daniel Kogut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieltugok/rocket.q/issues"
+  },
+  "homepage": "https://github.com/danieltugok/rocket.q#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

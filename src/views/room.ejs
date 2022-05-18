@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rocket.Q - Perguntas e resposta</title>
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/room.css" />
-    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/room.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
+
+    <script src="/scripts/main.js" defer type="module"></script>
+
   </head>
   <body>
     <div id="room" class="content">
       <header>
-        <a href="home.html">
-          <img src="assets/logo.svg" alt="Rocket.Q Logo" />
+        <a href="/">
+          <img src="/images/logo.svg" alt="Rocket.Q Logo" />
         </a>
 
         <div class="buttons">
-          <div class="button outlined">
+          <div class="button outlined" id="room-id" data-id="323232">
             #323243
-            <img src="/assets/copy.svg" alt="Copiar" />
+            <img src="/images/copy.svg" alt="Copiar" />
           </div>
           <a href="#" class="button">
-            <img src="/assets/users_white.svg" alt="Criar sala" />
+            <img src="/images/users_white.svg" alt="Criar sala" />
             Criar Sala
           </a>
         </div>
@@ -45,7 +48,7 @@
 
             <footer>
               <div>
-                <img src="/assets/lock.svg" alt="Cadeado" />
+                <img src="/images/lock.svg" alt="Cadeado" />
                 Essa pergunta e anonima
               </div>
               <button>Enviar</button>
@@ -59,47 +62,49 @@
           <div class="question-wrapper">
             <div class="question-content">
               <div class="user">
-                <img src="/assets/user.svg" alt="Avatar" />
+                <img src="/images/user.svg" alt="Avatar" />
               </div>
               <div class="question">
                 <p>Qual a diferenca entre var, let e const no javascript?</p>
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="check">
-                <img src="/assets/check-mark.svg" alt="Marcar como lida" />
+              <a href="#" class="check" data-id="2">
+                <img src="/images/check-mark.svg" alt="Marcar como lida" />
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
-                <img src="/assets/trash.svg" alt="Excluir" />
+              <a href="#" class="delete" data-id="2">
+                <img src="/images/trash.svg" alt="Excluir" />
                 Excluir
               </a>
             </div>
           </div>
+
           <div class="question-wrapper">
             <div class="question-content">
               <div class="user">
-                <img src="/assets/user.svg" alt="Avatar" />
+                <img src="/images/user.svg" alt="Avatar" />
               </div>
               <div class="question">
                 <p>Explique melhor sobre closure?</p>
               </div>
             </div>
             <div class="actions">
-              <a href="#" class="check">
-                <img src="/assets/check-mark.svg" alt="Marcar como lida" />
+              <a href="#" class="check" data-id="3">
+                <img src="/images/check-mark.svg" alt="Marcar como lida" />
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
-                <img src="/assets/trash.svg" alt="Excluir" />
+              <a href="#" class="delete" data-id="3">
+                <img src="/images/trash.svg" alt="Excluir" />
                 Excluir
               </a>
             </div>
           </div>
+
           <div class="question-wrapper read">
             <div class="question-content">
               <div class="user">
-                <img src="/assets/user.svg" alt="Avatar" />
+                <img src="/images/user.svg" alt="Avatar" />
               </div>
               <div class="question">
                 <p>O que e javascript?</p>
@@ -107,12 +112,12 @@
             </div>
 
             <div class="actions">
-              <a href="#" class="check">
-                <img src="/assets/check-mark.svg" alt="Marcar como lida" />
+              <a href="#" class="check" data-id="1">
+                <img src="/images/check-mark.svg" alt="Marcar como lida" />
                 Marcar como lida
               </a>
-              <a href="#" class="delete">
-                <img src="/assets/trash.svg" alt="Excluir" />
+              <a href="#" class="delete" data-id="1">
+                <img src="/images/trash.svg" alt="Excluir" />
                 Excluir
               </a>
             </div>
@@ -126,12 +131,12 @@
         <div class="modal">
             <h2>Excluir Pergunta</h2>
             <p>Tem certeza que deseja excluir esta pergunta?</p>
-            <form action="">
+            <form action="#" method="POST">
                 <label class="src-only" for-id="password">Digite sua senha admin</label>
                 <input type="password" name="password" id="password" placeholder="Digite sua senha">
 
                 <div class="buttons">
-                    <div class="button grey">Cancelar</div>
+                    <div class="button grey cancel">Cancelar</div>
                     <button class="red">Sim, excluir</button>                    
                 </div>
             </form>
