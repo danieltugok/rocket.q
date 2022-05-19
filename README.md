@@ -49,25 +49,14 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.
 ## Para rodar o projeto
 
 
+        //instalar dependencias
         npm install
 
+        //Criar o banco de dados
+        npm run init-db
 
-
-
-``
-
-npm install
-
----
-
-npm run init-db
-
----
-
-npm start
-
-``
-
+        //rodar projeto
+        npm start
 
 
 Feito com ♥ :wave:
