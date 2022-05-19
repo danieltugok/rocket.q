@@ -6,6 +6,14 @@ const modalTitle = document.querySelector('.modal h2');
 const modalDescription = document.querySelector('.modal p');
 const modalButton = document.querySelector('.modal button');
 
+const copyRoomIdButton = document.querySelector('#room .buttons #room-id');
+copyRoomIdButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    const roomIdSelected = document.querySelector("#room-id").dataset.id;
+
+     navigator.clipboard.writeText(roomIdSelected);
+     alert("ID da sala Copiado: " + roomIdSelected);
+}); 
 
 const checkButtons = document.querySelectorAll('.actions a.check');
 checkButtons.forEach(button => {
@@ -34,6 +42,8 @@ function handleClick(event, check = true){
     
     modal.open();    
 }
+
+
 
 
 

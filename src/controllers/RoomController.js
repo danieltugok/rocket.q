@@ -37,9 +37,28 @@ module.exports = {
     res.redirect(`/room/${roomId}`);
   },
 
-  open( req, res){
+  async open( req, res){
     const roomId = req.params.roomId;
+    
+    const db = await Database();
+    const questions = await db.all(`SELECT * FROM questions WHERE room = ${roomId}`);
 
-    res.render('room', { roomId });
+    res.render('room', { roomId, questions });
+  },
+
+  async enter(req, res){
+    const roomId = req.body.roomId;
+    console.log("🚀 ~ file: RoomController.js ~ line 52 ~ enter ~ roomId", roomId)
+
+    const db = await Database();
+    const room = await db.get(`SELECT id FROM rooms WHERE id = ${roomId}`);
+    console.log("🚀 ~ file: RoomController.js ~ line 56 ~ enter ~ room", room)
+    
+    if (room) {
+      console.log(`entrou no if`);
+      res.redirect(`/room/${roomId}`);
+    }
+
+    res.render('room-incorrect');
   }
 };

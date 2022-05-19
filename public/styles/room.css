@@ -146,6 +146,27 @@
 }
 
 
+/* No question */
+.no-question{
+    text-align: center;
+    margin-top: 5.2rem;    
+}
 
+.no-question img{
+    max-width: 100%;
+    margin-bottom: 1.2rem; 
+}
 
+.no-question p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;      
+}
 
+.no-question p + p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1.3rem;
+    line-height: 1.9rem;
+}
