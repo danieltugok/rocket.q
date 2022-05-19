@@ -48,6 +48,12 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.
 
 ## Para rodar o projeto
 
+
+        npm install
+
+
+
+
 ``
 
 npm install
