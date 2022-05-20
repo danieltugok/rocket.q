@@ -3,10 +3,10 @@
 </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licença">License</a>
 </p>
 
 <p align="center">
@@ -21,42 +21,42 @@
   <img alt="Rocket.Q" src=".github/capa.png" width="100%">
 </p>
 
-## 🚀 Tecnologias
+## 🚀 Tecnologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with:
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 - NodeJS
 - EJS
 - Express
 - SQLite
 
-## 💻 Projeto
+## 💻 Project
 
-Esse projeto foi feito junto com a RockeSeat - O Rocket.Q é uma aplicação de interação através de perguntas, sendo possível criar uma sala para internautas anônimos fazerem perguntas e o criador da sala em posse de uma senha gerenciar essas perguntas e marcar como lidas.
+This project Rocket.Q is an aplication to interact sending any question, with the possibility to create room for anonymous internet users to ask questions and the creator of the room in possession of a password to manage these questions and mark as read.
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1009821158959690135/Roquet.q). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+You can see the Layout through [this link](https://www.figma.com/community/file/1009821158959690135/Roquet.q). It is necessary to have an [Figma](https://figma.com) account to access.
 
-## :memo: Licença
+## :memo: License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
-
-
-## Para rodar o projeto
+This project is MIT License.
 
 
-        //instalar dependencias
+## Run the project 
+
+
+        //install dependencies
         npm install
 
-        //Criar o banco de dados
+        //Create DB
         npm run init-db
 
-        //rodar projeto
+        //Run project
         npm start
 
 
-Feito com ♥ :wave:
+Made with ♥ 
